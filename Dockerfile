@@ -1,6 +1,4 @@
-FROM python:2.7
+FROM jfloff/jfloff/alpine-python:2.7-onbuild
 LABEL maintainer="Nate Kilzer <nkilzer@gmail.com>"
-WORKDIR /app
-RUN pip install -r requirements.txt
 EXPOSE 8888
-CMD ["python", "/app/app.py"]
+CMD ["python", "app.py"]
